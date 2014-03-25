@@ -480,7 +480,7 @@ public class Worm {
 		if (! Character.isUpperCase(name.charAt(0)))
 			return false;
 		for (char element: name.toCharArray()){
-			if ( !((Character.isLetter(element)) || (validCharacters.contains(String.valueOf(element)))) )
+			if ( !((Character.isLetterOrDigit(element)) || (validCharacters.contains(String.valueOf(element)))) )
 				return false;
 		}
 		return true;
